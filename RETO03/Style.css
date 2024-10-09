@@ -1,0 +1,125 @@
+* {  
+    margin: 0;  
+    padding: 0;  
+    box-sizing: border-box;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+   
+}  
+
+header {  
+    background-color: #007bff; 
+    color: white;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 10px 20px;  
+}  
+
+.logo img {  
+    height: 50px; 
+}  
+nav ul {  
+    list-style: none;  
+    display: flex;  
+}  
+
+nav ul li {  
+    margin-left: 20px;  
+}  
+
+nav ul li a {  
+    color: white;  
+    text-decoration: none;  
+    font-weight: bold;  
+}  
+
+main {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: calc(100vh - 60px); 
+    background-image: url('imagenes/imagen\ 1.png'); 
+    background-size: cover;  
+    background-position: center;  
+}  
+.menu-toggle {  
+    display: none;
+    flex-direction: column;  
+    cursor: pointer;  
+}  
+.menu-toggle .bar {  
+    height: 3px;  
+    width: 25px;  
+    background-color: white;  
+    margin: 3px 0;  
+}  
+nav {  
+    display: flex;  
+}  
+
+.nav-list {  
+    list-style: none;  
+    display: flex;  
+    margin: 0;  
+    padding: 0;  
+} 
+
+.nav-list li {  
+    margin-left: 20px;  
+}  
+.boton {  
+    display: flex;  
+    align-items: center;  
+    
+    color: rgb(255, 255, 255); 
+    text-decoration: none;  
+    padding: 10px 15px;  
+    border-radius: 5px;   
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}  
+
+.boton:hover {  
+    background-color: #FFC107; 
+    color: black; 
+}  
+
+
+.icono {  
+    width: 20px; 
+    height: 20px; 
+    margin-right: 5px;  
+    vertical-align: middle; 
+}
+
+
+h1 {  
+    font-size: 3em;  
+    color: white;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);  
+}  
+
+/* Estilos del responsive */  
+@media (max-width: 768px) {  
+    .menu-toggle {  
+        display: flex; /*  menú en pantallas pequeñas */  
+    }  
+
+    
+
+    nav.active {  
+        display: block; /* Mostrar el menú cuando está activo */  
+    }  
+
+    .nav-list {  
+        flex-direction: column; 
+        align-items: center;
+        padding: 20px 0; 
+    }  
+
+    .nav-list li {  
+        margin: 10px 0; 
+    }  
+}  
